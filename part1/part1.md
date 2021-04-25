@@ -17,6 +17,26 @@
   8) This function will still return a new array called discounted with the updated discountedPrice values. It will return [50,100,150]. Even though this array is of type let, it is again not declared within a specific block of code in the function. The discounted array is declared at the top of the discountPrices function is not declared within a block, so when we reference it at the end of the function to return it, we won't get an error. And we get all the correct values within this array since we push the updated values of the discountedPrice into the discounted array as we go through the for loop.
   9) At line 11, the code will cause an error. Because again, the variable i is of type let and since we declare it within the for loop block, we will not be able to access it at line 11 when we want to print the value of i. 
   10) At line 12, we will print the length of the prices array that was passed into the function. We print the value of 3. Even though the length variable is of type const, it was declared at the top of the function and not within any specific block. So that valuable will be reachable once we want to print it at line 12. 
-  11) 
+  11) This function will still return the discounted array [50,100,150]. This is because for each iteration of the for loop, you are redeclaring the discountedPrice variable. So even though discountedPrice is of type, it gets redeclared each iteration so we are pushing the correctly updated values into the discounted array each iteration of the for loop.
+  12) A) student.name;
+      B) student['Grad Year']
+      C) student.greeting()
+      D) student['Favorite Teacher'].name
+      E) student.courseLoad[1] (I interpreted first index as index 1 and not 0, but if the directions meant 0th index, then just change the 1 to a 0.)
+  13) A) The output is '32'. This is the output because JS sees this line as "string value plus number value." And since the sum operator is also used for concatenation, JS concatenates all the values as strings.
+      B) The output is 1. Even though we start with a string here, you cannot subtract strings, so it makes more sense for JS to parse everything as numbers because subtraction is an arithmetical operation. So we just do the arithmetic 3-2 =1.
+      C) The output is 3. Null is parsed as a number & it becomes 0. Which is why 3 + null (aka zero) is just 3.
+      D) The output is '3null'. Again JS sees this line as "string value plus null". And since the sum operator is also used for concatenation, JS concatenates all the values as strings & we just concatenate the two values to get '3null'.
+      E) The output is 4. True is parsed as the number 1, so we just do arithmetic and get true (aka 1) + 3 which is 4. 
+      F) The output is 0. Both false and null get parsed to be the number 0. So we get false (aka 0) + null (aka 0) = 0.
+      G) The output is '3undefined'. Again JS sees this line as "string value plus undefined." And since the sum operator is also used for concatenation, JS concatenates all the values as strings & we just concatenate the two values to get '3undefined'.
+      H) The output is NaN. This makes sense because when undefined is parsed into a number, it is parsed as NaN. And again, you cannot subtract strings, so it makes more sense for JS to parse everything as numbers because subtraction is an arithmetical operation. Doing the arithmetic, we get 3 - NaN, which is just NaN.
+  14) A) The output is true. It computes the ASCII value of the string '2' which is definitely greater than the number 1. The ASCII value of string '2' is 50 and 50 > 1.
+      B) The output is false. Because of dictionary comparison '2' is actually greater than '12'. The first char '2' is greater than the first char '1'.
+      C) The output is true. == is a comparison operator which transforms the operands having the same type before comparison. So, when you compare a string with a number, Javascript converts any string to a number. So 2 is equivalent to 2.
+      D) The output is false. === is a strict equality comparison operator in Javascript which returns false for the values which are not of a similar type. So since we have a string and a number, the values are not of similar type so we return false. 
+      E) The output is false. The value of true gets converted into a number since we use == operator, but the numerical value of true is 1 which is NOT equal to 2. 
+      F) The output is true. We can see that the boolean value from Boolean(2) is being returned true because the variable passed into this method has a value and is not null. So since Boolean(2) returns true, we get the comparison true === true which is true since true is equivalent to true and they are of the same type.
+  15) The double equals (==) is a comparison operator which transforms the operands having the same type before comparison. For instance, when you compare a string with a number, JavaScript converts any string to a number. However, the triple equals (===) is a strict equality comparison operator in JavaScript which returns false for the values which are not of a similar type.   
 
   
