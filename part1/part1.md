@@ -1,4 +1,4 @@
-1a)  
+## Part 1a  
   1) values added: 20 is printed by line 9. This is printed since we can access the var result value throughout the entire function. We just update the variable accordingly and print it out.
   2) final result: 20 is printed by line 13. Again, this is printed since we can access the var result value throughout the entire function, we can have access to it even after the if statement block. Thus, we just update the variable accordingly and print it out.
   3) values added: 20 is printed by line 9. This is printed because the let result variable is declared within the if statement block and the print statement in line 9 is also within the same if statement block. So since they are in the same block, we can just update the variable accordingly and print it out. 
@@ -6,7 +6,7 @@
   5) The code will return an error because you aren't supposed to reassign the result value after it is set as 0 since it is of type const.   
   6) Again, the code will return an error because you aren't supposed to reassign the result value after it is set as 0 since it is of type const. Since we call sumValues(10,10, true), we will run the if statement which will attempt to change the value of result, but we can't do that since it is a const.  
 
-1b) 
+## Part 1b 
   1) In line 12, we will print 3. Since i is a var, we know that we can access it throughout the entire function. So since we are printing at line 12 (which is within the discountPrices function definition), we will not get an error. We get the value 3 for i by simply going through the for loop and updating it accordingly & eventually printing the value of i at line 12. 
   2) In line 13, we will print 150. Again, since discountedPrice is of type var, we know that we can access it throughout the entire function. So since we are printing the value of discountedPrice at line 13 (which is within the discountPrices function definition), we will not get an error. We get the value 150 by continually updating the value of discountedPrice as we go through the for loop. And we end up with 150 because that is the last updated value of discountedPrice after we exit the for loop.
   3) In line 14, we will also print 150. Since finalPrice is of type var, we know that we can access it throughout the entire function (it is also not defined within a certain block, it's defined at the top of the function). So since we are printing the value of finalPrice at line 14 (which is within the discountPrices function definition), we will not get an error. We get the value 150 by continually updating the value of discountedPrice as we go through the for loop. And we end up with 150 because that is the last updated value of finalPrice after we exit the for loop.
